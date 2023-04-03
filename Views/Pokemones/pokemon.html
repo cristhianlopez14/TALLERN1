@@ -25,13 +25,13 @@
 
         <div class="contentTarjeta content">
             <form action="">
-                <input type="text" id="name" placeholder="Nombre">
+                <input type="text" id="name" placeholder="Nombre" required>
 
-                <input type="text" id="title" placeholder="Titulo">
+                <input type="text" id="title" placeholder="Titulo" required>
 
-                <input type="text" id="text" placeholder="Comentario">
+                <input type="text" id="text" placeholder="Comentario" required>
 
-                <input type="number" id="calificacion" placeholder="Calificación">
+                <input type="number" id="calificacion" placeholder="Calificación" required min="1" max="5">
 
                 <button type="submit" id="enviar">Enviar</button>
             </form>

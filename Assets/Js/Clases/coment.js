@@ -24,12 +24,17 @@ const envviar = document.getElementById('enviar');
 
 envviar.addEventListener('click', ()=>{
     let names = document.getElementById('name').value,
-    titulo = document.getElementById('title').value,
-    texto = document.getElementById('text').value,
-    calificacion = document.getElementById('calificacion').value;
+        titulo = document.getElementById('title').value,
+        texto = document.getElementById('text').value,
+        calificacion = document.getElementById('calificacion').value;
 
-    const comenta = new Comentario(names, titulo, texto, calificacion)
-    alert(comenta.coment);
+    if (/^[a-zA-ZÀ-ÖØ-öø-ÿ]+\.?(( |\-)[a-zA-ZÀ-ÖØ-öø-ÿ]+\.?)*/i.test(names) && /^[a-zA-Z ]{2,254}/i.test(titulo) && /^[a-zA-Z ]{2,254}/i.test(texto) && /^[1-5]/i.test(calificacion)) {
+        const comenta = new Comentario(names, titulo, texto, calificacion)
+        alert(comenta.coment);
+    } else {
+        alert('Ingresa correctamente los datos ')
+    }
+   
 })
 
 

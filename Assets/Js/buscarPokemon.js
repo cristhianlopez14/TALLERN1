@@ -6,6 +6,7 @@ buscara.addEventListener('click',  () => {
     modulo.innerHTML = "";
     let pokemon = document.getElementById('namePokemon').value;
     if (/^[A-Z]+$/i.test(pokemon)) {
+    
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then(response => response.json())
     .then(data => {
