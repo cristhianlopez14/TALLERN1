@@ -1,0 +1,19 @@
+@mixin itemsNav(){
+    color: Blue;
+    padding: 25px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;/* 
+    background-image: url(https://i.blogs.es/774450/portada-tabla-de-tipos-de-pokemon/1366_2000.webp);
+    background-size: cover; */
+    &:hover {
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.795);
+        background-color: rgb(172, 169, 168);
+        color: white;
+    }
+}
+
+@mixin bordeStyle(){
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 3px 1px rgb(187, 187, 1);
+}

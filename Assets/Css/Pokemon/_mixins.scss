@@ -1,0 +1,20 @@
+@mixin tarjeta($fondo){
+    width: 400px;
+    height: 220px;
+    background-color: $fondo;
+    position: absolute;
+    border-radius: 15px;
+    background-image: url(https://i.blogs.es/774450/portada-tabla-de-tipos-de-pokemon/1366_2000.webp);
+    background-size: cover;
+}
+
+@mixin text(){
+    padding-top: 25px;
+    padding-left: 25px;
+    background-color: rgba(128, 128, 128, 0.7);
+    font-size: 1.5rem;
+    width: 50%;
+    border-radius: 5px;
+    height: 70%;
+    text-align: justify;
+}

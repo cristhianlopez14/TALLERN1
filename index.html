@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Número 1</title>
+    <link rel="stylesheet" href="Assets/Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="Assets/Js/caruosel.js" defer></script>
+    <script src="Assets/Js/imgPokemon.js"></script>
+</head>
+<body onload="cargarImages()">
+    <div class="container">
+
+        <header class="header">
+            <img src="Assets/Img/icon.png" alt="Icon">
+        </header>
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="Views/Pokemones/pokemon.html">Comentario</a></li>
+                <li><a href="Views/BuscarPokemon/BuscarPokemon.html">Buscar</a></li>
+            </ul>
+        </nav>
+
+        <div class="content"> 
+            <h1>Pokemones</h1>
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel" id="pokemon">
+               
+                <div class="caja">
+                    <img src="" alt="ImgPokemon" id="imagen1" >
+                    <h2 id="namePokemon1">Name</h2>
+                    <span id="ability1"></span>
+
+                </div>
+                <div class="caja"> 
+                    <img src="" alt="ImgPokemon" id="imagen2">
+                    <h2 id="namePokemon2">Pokemones</h2>
+                    <span id="ability2"></span>
+                </div>
+                <div class="caja">
+                    <img src="" alt="ImgPokemon" id="imagen3" >
+                    <h2 id="namePokemon3">Pokemones</h2>
+                    <span id="ability3"></span>
+                </div>
+                <div class="caja">
+                    <img src="" alt="ImgPokemon" id="imagen4" >
+                    <h2 id="namePokemon4">Pokemones</h2>
+                    <span id="ability4"></span>
+                </div>
+                <div class="caja">
+                    <img src="" alt="ImgPokemon" id="imagen5" >
+                    <h2 id="namePokemon5">Name: </h2>
+                    <span id="ability5"></span>
+                </div>
+                <div class="caja">
+                    <img src="" alt="ImgPokemon" id="imagen6" >
+                    <h2 id="namePokemon6">Pokemones</h2>
+                    <span id="ability6"></span>
+                </div>
+
+            </div>
+            <i id="rigth" class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <footer class="footer" >
+            <h1>Copyright &#169; Cristhian Ignacio López</h1>
+        </footer>
+
+    </div>
+    
+</body>
+<script src="Assets/Js/script.js"></script>
+</html>
